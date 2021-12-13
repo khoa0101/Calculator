@@ -1,0 +1,187 @@
+.container {
+  background-color: var(--ion-color-secondary);
+  text-align: right;
+  display: grid;
+  grid-template-rows: 10vh minmax(15vh) auto;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 5% 10%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8vh;
+  bottom: 0;
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container p {
+  color: white;
+  margin: 0;
+  padding-bottom: 10%;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.result-container{
+  height: 15vh;
+  max-width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.result-container p{
+  max-width: 100%;
+}
+
+.numpad-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 2%;
+  row-gap: 2%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.numpad-container button{
+  box-sizing: border-box;
+  font-size: 5vh;
+  padding: 2vh 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--ion-color-secondary)
+}
+
+.numpad-container button:active{
+  background-color: yellowgreen;
+  color: white
+}
+
+.numpad-container .numpad{
+  box-sizing: border-box;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: inherit;
+  row-gap: inherit;
+}
+
+button.op-key{
+  background-color: gold;
+  color: black;
+}
+
+button#equal{
+  grid-column: 4;
+  grid-row: 4 / span 2;
+  border-radius: 100px;
+  padding: 0;
+}
+
+button#plus{
+  grid-column: 4;
+  grid-row: 3;
+}
+
+button#minus{
+  grid-column: 4;
+  grid-row: 2;
+}
+
+button#times{
+  grid-column: 4;
+  grid-row: 1;
+}
+
+button#divide{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+button.num-key#dot-key{
+  grid-column: 3;
+  grid-row: 5;
+}
+
+button.num-key#key-0{
+  grid-column: 1 / span 2;
+  border-radius: 100px;
+}
+
+button.clear-key{
+  border-color: gold;
+}
+
+button.num-key#key-1{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+button.num-key#key-2{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+button.num-key#key-3{
+  grid-column: 3;
+  grid-row: 4;
+}
+
+button.num-key#key-4{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+button.num-key#key-5{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+button.num-key#key-6{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+button.num-key#key-7{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+button.num-key#key-8{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+button.num-key#key-9{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+
+.big{
+  font-size: 400%;
+}
+
+.medium{
+  font-size: 300%;
+}
+
+.small{
+  font-size: 250%;
+}
+
+.smaller{
+  font-size: 150%;
+}
+
+.tiny{
+  font-size: 100%;
+}
