@@ -51,7 +51,7 @@
 .numpad-container button{
   box-sizing: border-box;
   font-size: 5vh;
-  padding: 2vh 0;
+  padding: 1vh 0;
   border: 2px solid white;
   border-radius: 50%;
   color: white;
@@ -188,23 +188,17 @@ button.num-key#key-9{
 }
 
 @media (orientation: landscape){
-  .big{
+  .big, .medium{
     font-size: 500%;
   }
-
-  .medium{
-    font-size: 500%;
-  }
-
   .small{
-    font-size: 500%;
+    font-size: 450%;
   }
-
   .smaller{
     font-size: 300%;
   }
 
   .tiny{
-    font-size: 300%;
+    font-size: 250%;
   }
 }
