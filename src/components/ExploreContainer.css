@@ -201,4 +201,11 @@ button.num-key#key-9{
   .tiny{
     font-size: 250%;
   }
+
+  .numpad-container button{
+  box-sizing: border-box;
+  font-size: 5vh;
+  padding: 1vh 0;
+  border-radius: 100px;
+  }
 }
