@@ -165,23 +165,46 @@ button.num-key#key-9{
   grid-row: 2;
 }
 
+@media (orientation: portrait){
+  .big{
+    font-size: 400%;
+  }
 
-.big{
-  font-size: 400%;
+  .medium{
+    font-size: 300%;
+  }
+
+  .small{
+    font-size: 250%;
+  }
+
+  .smaller{
+    font-size: 150%;
+  }
+
+  .tiny{
+    font-size: 100%;
+  }
 }
 
-.medium{
-  font-size: 300%;
-}
+@media (orientation: landscape){
+  .big{
+    font-size: 500%;
+  }
 
-.small{
-  font-size: 250%;
-}
+  .medium{
+    font-size: 500%;
+  }
 
-.smaller{
-  font-size: 150%;
-}
+  .small{
+    font-size: 500%;
+  }
 
-.tiny{
-  font-size: 100%;
+  .smaller{
+    font-size: 300%;
+  }
+
+  .tiny{
+    font-size: 300%;
+  }
 }
