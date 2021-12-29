@@ -189,6 +189,29 @@ button.num-key#key-9{
 
 @media (orientation: landscape){
   .big, .medium{
+    font-size: 300%;
+  }
+  .small{
+    font-size: 250%;
+  }
+  .smaller{
+    font-size: 150%;
+  }
+
+  .tiny{
+    font-size: 115%;
+  }
+
+  .numpad-container button{
+  box-sizing: border-box;
+  font-size: 5vh;
+  padding: 1vh 0;
+  border-radius: 100px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 1470px){
+  .big, .medium{
     font-size: 500%;
   }
   .small{
@@ -199,13 +222,6 @@ button.num-key#key-9{
   }
 
   .tiny{
-    font-size: 250%;
-  }
-
-  .numpad-container button{
-  box-sizing: border-box;
-  font-size: 5vh;
-  padding: 1vh 0;
-  border-radius: 100px;
+    font-size: 275%;
   }
 }
