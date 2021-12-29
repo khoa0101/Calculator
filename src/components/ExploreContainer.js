@@ -79,16 +79,17 @@ class ExploreContainer extends React.Component{
     const {log, expression} = this.state;
     const nums = [];
     for (let i = 9; i >= 0; i--){ nums[i] = 9 - i }
+    const currentLogs = log.slice(-3);
 
     return (
       <div className="container">
         <div className="log-container">
-          {/* <ul className='log'>
-            {log.map((expression, i) => (
+          <ul className='log'>
+            {currentLogs.map((expression, i) => (
               <li key={i}>{expression}</li>
             ))
             }
-          </ul> */}
+          </ul>
         </div>
         <div className="result-container">
           <p className={expression.length < 7 ? this.size[0] : expression.length < 9 ? 
