@@ -1,9 +1,9 @@
 .container {
   background-color: var(--ion-color-secondary);
+  color: white;
   text-align: right;
   display: grid;
-  grid-template-rows: 10vh minmax(15vh) auto;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr minmax(15vh) auto;
   padding: 5% 10%;
   position: absolute;
   left: 0;
@@ -17,8 +17,7 @@
   line-height: 26px;
 }
 
-.container p {
-  color: white;
+.container p{
   margin: 0;
   padding-bottom: 10%;
 }
@@ -27,14 +26,30 @@
   text-decoration: none;
 }
 
+.log-container{
+  overflow: auto;
+  height: 78px;
+}
+
+.log-container ul{
+  position: relative;
+}
+
+.log-container ul li{
+  word-break: break-all;
+}
+
 .result-container{
+  position: relative;
   height: 15vh;
-  max-width: 100%;
+  width: 100%;
   border-bottom: 2px solid white;
 }
 
 .result-container p{
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+  word-break: break-all;
 }
 
 .numpad-container{
@@ -53,14 +68,13 @@
   font-size: 5vh;
   padding: 1vh 0;
   border: 2px solid white;
-  border-radius: 50%;
   color: white;
+  border-radius: 50%;
   background-color: var(--ion-color-secondary)
 }
 
 .numpad-container button:active{
   background-color: yellowgreen;
-  color: white
 }
 
 .numpad-container .numpad{
