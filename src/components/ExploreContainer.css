@@ -28,11 +28,18 @@
 
 .log-container{
   overflow: auto;
-  height: 78px;
+  height: 70px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .log-container ul{
+  height: 70px;
   position: relative;
+}
+
+.log-container::-webkit-scrollbar{
+  display: none;
 }
 
 .log-container ul li{
@@ -61,6 +68,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .numpad-container button{
