@@ -14,6 +14,7 @@ class ExploreContainer extends React.Component{
     this.handleClear = this.handleClear.bind(this);
     this.handleCalculation = this.handleCalculation.bind(this);
     this.handleFinalize = this.handleFinalize.bind(this);
+    this.handleAllClear = this.handleAllClear.bind(this);
   }
 
   handleClear(e){
@@ -22,6 +23,15 @@ class ExploreContainer extends React.Component{
       expression: '',
       result: '0',
     });
+  }
+
+  handleAllClear(e){
+    e.preventDefault();
+    this.setState({
+      expression: '',
+      log : [],
+      result: '',
+    })
   }
 
   handleCalculation(e){
@@ -100,6 +110,7 @@ class ExploreContainer extends React.Component{
         </div>
         <div className="numpad-container">
           <button className='clear-key' onClick={this.handleClear}>C</button>
+          <button className='clear-key' onClick={this.handleAllClear}>AC</button>
           {nums.map((i) => (
             <button key={i} className='num-key' id={`key-${i}`} onClick={this.handleCalculation} value={`${i}`}>{i}</button>
             ))
