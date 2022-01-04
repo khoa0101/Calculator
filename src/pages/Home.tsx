@@ -2,24 +2,12 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonMenu, IonMenuButton, Ion
 import { Link } from 'react-router-dom';
 import ExploreContainer from '../components/ExploreContainer.js';
 import './Home.css';
+import Menu from '../components/menu.js';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
-        <IonMenu side="start" contentId="first">
-          <IonHeader>
-            <IonToolbar color="primary">
-              <IonTitle>Menu</IonTitle>
-          </IonToolbar>
-          </IonHeader>
-          <IonContent>
-            <IonList>
-              <IonItem><Link to='/home'>Calculator</Link></IonItem>
-              <IonItem><Link to='/converter'>Converter</Link></IonItem>
-              <IonItem><Link to='/setting'>Setting</Link></IonItem>
-            </IonList>
-          </IonContent>
-        </IonMenu>
+      <Menu />
       <IonToolbar color='primary' id="first">
         <IonButtons slot='start'>
           <IonMenuButton></IonMenuButton>
