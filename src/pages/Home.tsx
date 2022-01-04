@@ -14,6 +14,7 @@ const Home: React.FC = () => {
           </IonHeader>
           <IonContent>
             <IonList>
+              <IonItem><Link to='/home'>Calculator</Link></IonItem>
               <IonItem><Link to='/converter'>Converter</Link></IonItem>
               <IonItem><Link to='/setting'>Setting</Link></IonItem>
             </IonList>
