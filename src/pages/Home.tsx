@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonToolbar, IonMenu, IonMenuButton, IonButtons, IonTitle, IonItem, IonList} from '@ionic/react';
+import { IonContent, IonPage, IonToolbar, IonMenuButton, IonButtons} from '@ionic/react';
 import { Link } from 'react-router-dom';
 import ExploreContainer from '../components/ExploreContainer.js';
 import './Home.css';
