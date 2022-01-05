@@ -29,7 +29,7 @@ class SettingForm extends React.Component{
         <IonContent fullscreen>
           <IonItem>
             <IonLabel>Select Color</IonLabel>
-            <IonSelect onChange={() => color[1]}>
+            <IonSelect onIonChange={e => setColor(e.target.value)}>
               <IonSelectOption value="primary">Purple</IonSelectOption>
               <IonSelectOption value="tertiary">Blue</IonSelectOption>
               <IonSelectOption value="dark">Dark</IonSelectOption>
