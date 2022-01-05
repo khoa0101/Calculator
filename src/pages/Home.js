@@ -1,10 +1,14 @@
 import { IonContent, IonPage, IonToolbar, IonMenuButton, IonButtons} from '@ionic/react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import ExploreContainer from '../components/ExploreContainer.js';
 import './Home.css';
 import Menu from '../components/menu.js';
+import { StoreContext } from '../helper/Store.js';
 
-const Home: React.FC = () => {
+
+const Home = () => {
+  // const {color} = React.useContext(StoreContext);
+
   return (
     <IonPage>
       <Menu />

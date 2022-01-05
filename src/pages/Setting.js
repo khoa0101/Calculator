@@ -26,7 +26,7 @@ class SettingForm extends React.Component{
               <IonSelectOption value="red">Red</IonSelectOption>
             </IonSelect>
           </IonItem>
-            <IonItem>
+            {/* <IonItem>
             <IonLabel>Select Font</IonLabel>
             <IonSelect>
               <IonSelectOption value="brown">Brown</IonSelectOption>
@@ -34,7 +34,7 @@ class SettingForm extends React.Component{
               <IonSelectOption value="black">Black</IonSelectOption>
               <IonSelectOption value="red">Red</IonSelectOption>
             </IonSelect>
-          </IonItem>
+          </IonItem> */}
         </IonContent>
       </IonPage>
     )
