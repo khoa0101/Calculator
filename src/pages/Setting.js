@@ -33,7 +33,7 @@ class SettingForm extends React.Component{
               <IonSelectOption value="primary">Purple</IonSelectOption>
               <IonSelectOption value="tertiary">Blue</IonSelectOption>
               <IonSelectOption value="dark">Dark</IonSelectOption>
-              <IonSelectOption value="warning">Red</IonSelectOption>
+              <IonSelectOption value="warning">Yellow</IonSelectOption>
             </IonSelect>
           </IonItem>
             {/* <IonItem>
