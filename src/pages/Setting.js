@@ -10,10 +10,6 @@ class SettingForm extends React.Component{
     super(props);
   }
 
-  componentDidMount(){
-    console.log(this.context);
-  }
-
   render(){
     const color = this.context.color[0];
     const setColor = this.context.color[1];
