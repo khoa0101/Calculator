@@ -1,17 +1,27 @@
 import React from 'react';
 import {IonPage, IonToolbar, IonButtons, IonMenuButton, IonContent, IonItem, IonSelect, IonSelectOption, IonLabel} from '@ionic/react';
 import Menu from '../components/menu';
+import { StoreContext } from '../helper/Store.js';
 
 class SettingForm extends React.Component{
+  static contextType = StoreContext; 
+
   constructor(props){
     super(props);
   }
 
+  componentDidMount(){
+    console.log(this.context);
+  }
+
   render(){
+    const color = this.context.color[0];
+    const setColor = this.context.color[1];
+
     return (
       <IonPage>
         <Menu />
-        <IonToolbar color='primary' id="first">
+        <IonToolbar color={color} id="first">
           <IonButtons slot='start'>
             <IonMenuButton></IonMenuButton>
           </IonButtons>
@@ -19,11 +29,11 @@ class SettingForm extends React.Component{
         <IonContent fullscreen>
           <IonItem>
             <IonLabel>Select Color</IonLabel>
-            <IonSelect>
-              <IonSelectOption value="brown">Brown</IonSelectOption>
-              <IonSelectOption value="blonde">Blonde</IonSelectOption>
-              <IonSelectOption value="black">Black</IonSelectOption>
-              <IonSelectOption value="red">Red</IonSelectOption>
+            <IonSelect onChange={() => color[1]}>
+              <IonSelectOption value="primary">Purple</IonSelectOption>
+              <IonSelectOption value="tertiary">Blue</IonSelectOption>
+              <IonSelectOption value="dark">Dark</IonSelectOption>
+              <IonSelectOption value="warning">Red</IonSelectOption>
             </IonSelect>
           </IonItem>
             {/* <IonItem>

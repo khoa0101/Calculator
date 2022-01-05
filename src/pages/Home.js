@@ -7,12 +7,12 @@ import { StoreContext } from '../helper/Store.js';
 
 
 const Home = () => {
-  // const {color} = React.useContext(StoreContext);
+  const {color} = React.useContext(StoreContext);
 
   return (
     <IonPage>
       <Menu />
-      <IonToolbar color='primary' id="first">
+      <IonToolbar color={color[0]} id="first">
         <IonButtons slot='start'>
           <IonMenuButton></IonMenuButton>
         </IonButtons>

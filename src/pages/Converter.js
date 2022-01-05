@@ -17,6 +17,18 @@ class Converter extends React.Component{
           </IonButtons>
         </IonToolbar>
         <IonContent fullscreen>
+          <div>
+            <h1>Convert</h1>
+            <input type="number" />
+            <select>
+              <option value="USD">USD</option>
+            </select>
+            <h1>=</h1>
+            <input type="number" />
+            <select>
+              <option value="USD">USD</option>
+            </select>
+          </div>
         </IonContent>
       </IonPage>
     )
